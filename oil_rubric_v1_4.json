@@ -1,0 +1,128 @@
+{
+  "version": "1.4",
+  "features": [
+    {
+      "feature": "Domestic Oil & Gas Production Push",
+      "id": "OIL_MARKET_01",
+      "type": "score",
+      "scores": "[-1, 0, 1, 2, 9]",
+      "rubric": "Definition: explicit support for or opposition to expanding US oil and gas extraction, leasing, pipelines, refining or permitting; does not measure generic national pride or foreign production. -1 = Explicit opposition to drilling, leasing, pipelines or fossil-fuel expansion; call for moratorium or phase-out; 0 = No US oil/gas production stance; 1 = Moderate support for production, permitting, infrastructure or regulatory easing; 2 = Aggressive expansion demand, rapid approvals, major pipeline/refinery expansion, or 'DRILL, BABY, DRILL' in a clear oil/gas context; 9 = Context-dependent phrase (e.g. 'Energy Dominance') without enough information to know whether oil/gas expansion is intended. Boundary rule: include 'ramping up domestic energy production' only where surrounding text establishes oil/gas or fossil production; exclude general appointments, 'made in America', foreign oil tax debates and ceremonial uses of 'energy dominance' unless the oil/gas policy content is explicit."
+    },
+    {
+      "feature": "Geopolitical Chokepoint & Supply Threat",
+      "id": "OIL_MARKET_02",
+      "type": "score",
+      "scores": "[-1, 0, 1, 2, 9]",
+      "rubric": "Definition: severity of a foreign-policy development affecting oil supply, sanctions, tankers, energy infrastructure or a major transit route; this score reflects threat/de-escalation intensity, price direction is coded separately. -1 = Explicit diplomatic de-escalation, restored safe passage, postponed strikes, treaty compliance or other action that reduces a previously identified energy-supply threat; 0 = No geopolitical oil-supply content; 1 = Moderate warning, mention of supply risk, sanctions exposure or transit concern without direct coercive action; 2 = Direct threat, blockade, tanker seizure, military action, strike threat, severe sanction, or interference with Hormuz or another major oil route/infrastructure; 9 = Foreign-policy language is present but its oil-supply relevance or direction cannot be established. Boundary rule: naming Iran, Russia, Venezuela, China or OPEC alone is not enough - the post must connect the actor to oil/gas supply, transport, infrastructure, sanctions or market access; a North Sea tax or drilling-policy story is not automatically a geopolitical threat."
+    },
+    {
+      "feature": "Retail Gasoline Price & Consumer Pain Framing",
+      "id": "OIL_MARKET_03",
+      "type": "score",
+      "scores": "[0, 1, 2, 9]",
+      "rubric": "Definition: how strongly the post frames petrol/gasoline, heating or household energy prices as a consumer affordability issue; price direction is recorded separately. 0 = No consumer fuel-price or household energy-cost framing; 1 = Clear mention of pump prices, household energy bills, heating costs, affordability or consumer relief/pain; 2 = Specific dramatic price target, quantified household saving, promise of rapid/record relief, or strong claim that an opponent will cause a severe price increase; 9 = Oil or energy prices are mentioned but it is unclear whether the reference concerns consumers, wholesale markets, or a different price concept."
+    },
+    {
+      "feature": "Explicit Commodity-Market Volatility or Trading Link",
+      "id": "OIL_MARKET_04",
+      "type": "score",
+      "scores": "[0, 1, 9]",
+      "rubric": "Definition: an explicit connection between a policy statement or supply event and oil futures, commodity trading, volatility, speculation or trading behaviour. 0 = No explicit commodity-market, futures, speculation or volatility link; 1 = The post explicitly discusses oil/commodity futures, traders, speculation, volatility, market repricing, or how a policy/supply shock is moving those markets; 9 = The post refers to general financial markets or interest rates, but the oil/commodity-market connection is unclear."
+    },
+    {
+      "feature": "Strategic Petroleum Reserve (SPR) Policy",
+      "id": "OIL_MARKET_05",
+      "type": "score",
+      "scores": "[-1, 0, 1, 9]",
+      "rubric": "Definition: an explicit stance on the United States Strategic Petroleum Reserve. -1 = Praises, defends or advocates drawing down the SPR to manage prices or supply; 0 = No mention of the Strategic Petroleum Reserve; 1 = Explicit criticism of SPR depletion, warning of national-security vulnerability, or demanding immediate refilling; 9 = Uses 'reserve' or 'oil reserves' without enough evidence that the Strategic Petroleum Reserve is meant. Boundary rule: only explicit 'SPR', 'Strategic Petroleum Reserve', or an unmistakable US reserve-policy reference qualifies."
+    },
+    {
+      "feature": "Anti-Green / Renewable Mandate Pushback",
+      "id": "OIL_MARKET_06",
+      "type": "score",
+      "scores": "[0, 1, 9]",
+      "rubric": "Definition: explicit criticism, mockery or policy opposition toward renewable energy, EV mandates, climate regulation or green subsidies. 0 = No mention of clean energy or climate rules; 1 = Explicit criticism, mockery or policy opposition toward renewable-energy subsidies, EV mandates, wind/solar policy, climate rules, or policies perceived as harming fossil-fuel dominance; 9 = The post supports fossil energy but does not clearly state whether it opposes green policy. Boundary rule: do not infer this label from 'energy dominance', drilling support, EPA appointments, or low-regulation rhetoric alone; pro-oil and anti-green are analytically distinct, so support for domestic production does not itself establish hostility to renewables and requires its own textual evidence."
+    },
+    {
+      "feature": "Domestic Partisan Blame & Institutional Scapegoating",
+      "id": "OIL_MARKET_07",
+      "type": "score",
+      "scores": "[0, 1, 9]",
+      "rubric": "Definition: explicit attribution of oil-supply problems, high energy prices, or restrictive energy policy to a US political opponent, regulator or public institution. 0 = No partisan targeting or regulatory blame; 1 = Direct attack on domestic political opponents, current executive regulators, or agencies (e.g. Biden, Democrats, EPA, the Federal Reserve) for causing energy supply crunches or high prices; 9 = The target is insulted, but the connection between the blame and oil/energy is uncertain. Boundary rule: unrelated attacks on the media, a candidate, a stockbroker, or the Federal Reserve do not count unless an explicit energy causal claim is present."
+    },
+    {
+      "feature": "Anti-Cartel / Energy Nationalism Framing",
+      "id": "OIL_MARKET_08",
+      "type": "score",
+      "scores": "[0, 1, 9]",
+      "rubric": "Definition: explicit in-group/out-group framing in which American energy sovereignty is contrasted with a foreign cartel, hostile state, foreign supplier, or allegedly exploitative corporation. 0 = No populist or nationalist framing; 1 = In-group populist rhetoric targeting foreign oil cartels (OPEC), a foreign oil-producing state, foreign energy dependence, price-gouging corporations, or another out-group, while invoking American control, sovereignty or protection; 9 = Uses 'America First', 'Energy Dominance' or 'American energy' but lacks a clear foreign or cartel target. Boundary rule: generic patriotism is insufficient - both an identifiable energy-market context and a US-vs-external-actor contrast must be visible; do not assign this label merely because a domestic-production or nationalist phrase appears."
+    },
+    {
+      "feature": "Rhetorical Urgency & Affect",
+      "id": "OIL_AFFE_01",
+      "type": "score",
+      "scores": "[0, 1, 9]",
+      "rubric": "Definition: emotional intensity in the energy-relevant passage of the post, not the post's general campaign style. 0 = Matter-of-fact policy tone or analytical reporting in the energy-relevant passage; 1 = High emotional intensity in the energy-relevant passage: explicit outrage, threat, ALL-CAPS emphasis, multiple exclamation marks, or hyperbolic crisis vocabulary; 9 = Post too short or context-dependent to distinguish urgency from formatting/style. A long endorsement should not score 1 merely because unrelated sections use capitals; e.g. 'EVERYONE, KEEP OIL PRICES DOWN. I'M WATCHING!' is a clear 1, while formulaic 'Energy DOMINANCE' inside an endorsement is not necessarily 1."
+    },
+    {
+      "feature": "Sarcasm / Irony",
+      "id": "OIL_PRAG_01",
+      "type": "score",
+      "scores": "[0, 1, 9]",
+      "rubric": "Definition: clear non-literal mockery or irony in the energy-related message. 0 = Absent - text is literal and straightforward; 1 = Present - sarcasm, mockery or irony clearly used to ridicule an energy policy, actor or claim. Re-evaluate stance polarity upon scoring; 9 = Possible joke, rhetorical question, or fragment whose intended meaning cannot be established without missing context. Boundary rule: rhetorical questions, nicknames and insults are not automatically sarcasm - e.g. for 'KEEP THE OIL, ANYONE?', use 1 only if the surrounding source makes the ironic target clear, otherwise use 9."
+    },
+    {
+      "id": "OIL_DIRECTION_01",
+      "feature": "Oil-Price Direction (implied market pressure)",
+      "type": "direction",
+      "scores": "[-1, 0, 1, 2, 9]",
+      "rubric": "Topic and market direction are different questions, so this is scored as a separate variable. +1 = Implies higher oil prices/upward pressure: blocked transit, damaged infrastructure, tighter sanctions, lower supply, conflict escalation, production restriction, or a claim that prices will rise; 0 = No clear price implication, competing upward and downward mechanisms, or a purely ceremonial statement; -1 = Implies lower oil prices/downward pressure: expanded production, more supply, restored transit, de-escalation, a lower-cost promise, a current falling-price claim, or pressure to keep prices down; 9 = Direction depends on missing context, an inaccessible link, uncertain timing, or an economic mechanism too ambiguous for reliable coding. A geopolitical threat score of 2 (OIL_MARKET_02) can coexist with either +1 or -1 here - threat intensity and price direction are different variables and duplicate/re-truth records must not be scored differently on this variable without an explicit reason."
+    }
+  ],
+  "eligibility": {
+    "codes": [
+      {
+        "code": "INCLUDE_CORE",
+        "description": "Oil, petroleum, crude, WTI, Brent, gasoline/petrol, refining, pipelines, oil tankers, SPR, drilling, oil sanctions, oil-producing states, or energy policy is a central, substantive element of the post."
+      },
+      {
+        "code": "INCLUDE_CONTEXT",
+        "description": "Clearly an energy-markets post, but oil is one element of a broader energy message. Still scored, but flagged separately for sensitivity analysis."
+      },
+      {
+        "code": "EXCLUDE",
+        "description": "Oil/energy is absent, incidental, a false keyword match, or one item in a generic list with no distinct policy content (e.g. candidate endorsements listing 'Energy Dominance' among unrelated promises, non-energy manufacturing/trade stories, drugs/chemicals measured in 'barrels', generic Federal Reserve commentary, generic 'made in America' statements with no oil/gas content). Requires an exclusion_reason."
+      },
+      {
+        "code": "UNRESOLVED",
+        "description": "A bare URL, a fragment, a joke, or a context-dependent statement whose oil/energy meaning cannot be established from the text actually given. Do not guess a URL's content."
+      }
+    ],
+    "exclusion_reasons": [
+      {
+        "code": "endorsement_only",
+        "description": "Nomination/endorsement/campaign post naming energy only as an ideological marker, with no substantive energy claim."
+      },
+      {
+        "code": "non_energy_geopolitics",
+        "description": "Foreign-policy or geopolitical content with no oil/energy supply, transit, or sanctions connection."
+      },
+      {
+        "code": "false_keyword",
+        "description": "An oil/energy-sounding word refers to something else entirely in context (e.g. 'barrels' of a non-oil substance)."
+      },
+      {
+        "code": "non_energy_trade",
+        "description": "Manufacturing, tariffs, or trade content unrelated to oil/gas/energy (e.g. auto production, steel, general 'made in America')."
+      },
+      {
+        "code": "duplicate",
+        "description": "A re-truth or materially identical repost of an already-coded record; link to the canonical record's id."
+      },
+      {
+        "code": "inaccessible_link",
+        "description": "The only source of potential oil/energy content is a link that could not be resolved (paywalled with an ambiguous headline, dead link, etc.)."
+      }
+    ]
+  }
+}
